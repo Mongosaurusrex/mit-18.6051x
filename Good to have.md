@@ -103,7 +103,7 @@ $$
 
   
 
-$$\$$mathrm{TV}(P, Q) = \frac{1}{2} \sum_x |P(x) - Q(x)|$$
+$$\mathrm{TV}(P, Q) = \frac{1}{2} \sum_x |P(x) - Q(x)|$$
 
   
 
@@ -132,10 +132,24 @@ $$\$$mathrm{TV}(P, Q) = \frac{1}{2} \sum_x |P(x) - Q(x)|$$
 
 ### **Example:** $X \sim \mathrm{Ber}(p), Q = X + c$
 
-| **Case**                  | **TV(P,Q)**                              |
-| ------------------------- | ---------------------------------------- |
-| $c \notin \{ -1, 0, 1 \}$ | 1                                        |
-| $c = 0$                   | 0                                        |
-| $c = 1 or c = -1$         | $\frac{1}{2} (1 + \mathrm{abs}(2p - 1))$ |
+| **Case**                  | **TV(P,Q)**                              |     |
+| ------------------------- | ---------------------------------------- | --- |
+| $c \notin \{ -1, 0, 1 \}$ | 1                                        |     |
+| $c = 0$                   | 0                                        |     |
+| $c = 1 or c = -1$         | $\frac{1}{2} (1 + \mathrm{abs}(2p - 1))$ |     |
+|                           |                                          |     |
 
 ---
+## 🔢 Likelihood, Derivatives, and MLEs
+
+| Distribution            | Likelihood                                                         | Log-Likelihood                                                            | First Derivative                      | Second Derivative                          | MLE                                                                            |
+| ----------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------ |
+| **Bernoulli(p)**        | $p^x (1-p)^{1-x}$                                                  | $x \log p + (1 - x) \log(1 - p)$                                          | $\frac{x}{p} - \frac{1 - x}{1 - p}$   | $-\frac{x}{p^2} - \frac{1 - x}{(1 - p)^2}$ | $\hat{p} = \bar{X}_n$                                                          |
+| **Binomial(n, p)**      | $\binom{n}{x} p^x (1-p)^{n-x}$                                     | $\log \binom{n}{x} + x \log p + (n - x) \log(1 - p)$                      | $\frac{x}{p} - \frac{n - x}{1 - p}$   | $-\frac{x}{p^2} - \frac{n - x}{(1 - p)^2}$ | $\hat{p} = \frac{x}{n}$                                                        |
+| **Poisson(λ)**          | $\frac{e^{-\lambda} \lambda^x}{x!}$                                | $-\lambda + x \log \lambda - \log x!$                                     | $-1 + \frac{x}{\lambda}$              | $-\frac{x}{\lambda^2}$                     | $\hat{\lambda} = \bar{X}_n$                                                    |
+| **Uniform(a, b)**       | $\frac{1}{b-a} \mathbf{1}_{[a,b]}(x)$                              | $-\log(b - a)$                                                            | 0                                     | 0                                          | $\hat{a} = \min x_i, \hat{b} = \max x_i$                                       |
+| **Geometric(p)**        | $(1 - p)^{x - 1} p$                                                | $(x - 1) \log(1 - p) + \log p$                                            | $-\frac{x - 1}{1 - p} + \frac{1}{p}$  | $-\frac{x - 1}{(1 - p)^2} - \frac{1}{p^2}$ | $\hat{p} = \frac{1}{\bar{X}_n}$                                                |
+| **Normal(μ, σ²)**       | $\frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x - \mu)^2}{2\sigma^2}}$ | $-\frac{1}{2} \log(2\pi\sigma^2) - \frac{(x - \mu)^2}{2\sigma^2}$         | $\frac{x - \mu}{\sigma^2}$            | $-\frac{1}{\sigma^2}$                      | $\hat{\mu} = \bar{X}_n, \hat{\sigma}^2 = \frac{1}{n} \sum (x_i - \bar{X}_n)^2$ |
+| **Exponential(λ)**      | $\lambda e^{-\lambda x}$                                           | $\log \lambda - \lambda x$                                                | $\frac{1}{\lambda} - x$               | $-\frac{1}{\lambda^2}$                     | $\hat{\lambda} = \frac{1}{\bar{X}_n}$                                          |
+| **Gamma(α, β)**         | $\frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha - 1} e^{-\beta x}$  | $\alpha \log \beta - \log \Gamma(\alpha) + (\alpha - 1) \log x - \beta x$ | $\frac{\alpha}{\beta} - x$*(w.r.t β)* | $-\frac{\alpha}{\beta^2}$ *(w.r.t β)*      | $\hat{\beta} = \frac{\alpha}{\bar{X}_n}$                                       |
+| **Neg. Binomial(r, p)** | $\binom{x+r-1}{x} (1-p)^r p^x$                                     | $\log \binom{x+r-1}{x} + r \log(1 - p) + x \log p$                        | $\frac{x}{p} - \frac{r}{1 - p}$       | $-\frac{x}{p^2} - \frac{r}{(1 - p)^2}$     | $\hat{p} = \frac{r}{r + \bar{X}_n}$                                            |

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Good to have.md",
+                "file": "Unit 3/Lecture 10. Other Methods of estimation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Good to have"
+              "title": "Lecture 10. Other Methods of estimation"
             }
           }
         ]
@@ -170,26 +170,31 @@
   },
   "active": "ee8c4e7acd020fb6",
   "lastOpenFiles": [
-    "Unit 3/Lecture 6. Measures of Distance Between Probability Distributions.md",
-    "Pasted image 20250530155930.png",
+    "Unit 3/Lecture 9. Statistical properties of the MLE.md",
+    "Unit 3/Lecture 8. Examples of Maximum Likelihood Estimators.md",
     "Good to have.md",
-    "Unit 3",
+    "Unit 3/Lecture 7. Methods of estimating the MLE.md",
+    "Unit 3/Lecture 6. Measures of Distance Between Probability Distributions.md",
     "Unit 2/Lecture 5. Confidence Intervals and Delta method.md",
-    "Goal of class.md",
-    "Unit 1/Lecture 2 Probability Redux.md",
-    "Unit 2/Lecture 3. Parametric Statistical Models.md",
     "Unit 2/Lecture 4. Parametric Estimation and Confidence Intervals.md",
-    "Images/Pasted image 20250520131310.png",
-    "Images/Pasted image 20250520133246.png",
-    "Images/Pasted image 20250520085002.png",
-    "Images/Pasted image 20250520080746.png",
-    "Images/Pasted image 20250520082743.png",
-    "Images/Pasted image 20250517161123.png",
-    "Images/Pasted image 20250515143313.png",
-    "Images/Pasted image 20250517153616.png",
-    "Images/Pasted image 20250515131152.png",
-    "Unit 2",
+    "Unit 2/Lecture 3. Parametric Statistical Models.md",
+    "Unit 1/Lecture 2 Probability Redux.md",
     "Unit 1/Lecture 1 What is statistics.md",
+    "Unit 3/Lecture 10. Other Methods of estimation.md",
+    "Unit 3/Recitation. Comparing Estimators.md",
+    "Goal of class.md",
+    "Images/Pasted image 20250613135531.png",
+    "Images/Pasted image 20250613131909.png",
+    "Images/Pasted image 20250613132959.png",
+    "Pasted image 20250613131619.png",
+    "Images/Pasted image 20250611145132.png",
+    "Images/Pasted image 20250611142950.png",
+    "Images/Pasted image 20250611143317.png",
+    "Images/Pasted image 20250611141753.png",
+    "Pasted image 20250530155930.png",
+    "Unit 3",
+    "Images/Pasted image 20250520131310.png",
+    "Unit 2",
     "Images",
     "Unit 1",
     "Welcome.md"
