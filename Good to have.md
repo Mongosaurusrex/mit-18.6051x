@@ -1,4 +1,4 @@
-### Probability distribution types
+@@### Probability distribution types
 
 | **Distribution**         | **Type**   | **Support (Values it can take)**         | **Typical Applications**                                                                   | **Key Characteristics**                                                              |
 | ------------------------ | ---------- | ---------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |

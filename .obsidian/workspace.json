@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unit 3/Lecture 10. Other Methods of estimation.md",
+                "file": "Good to have.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 10. Other Methods of estimation"
+              "title": "Good to have"
             }
           }
         ]
@@ -170,17 +170,25 @@
   },
   "active": "ee8c4e7acd020fb6",
   "lastOpenFiles": [
-    "Unit 3/Lecture 9. Statistical properties of the MLE.md",
-    "Unit 3/Lecture 8. Examples of Maximum Likelihood Estimators.md",
+    "Unit 4/Lecture 13. The T-test.md",
+    "Pasted image 20250708154245.png",
+    "Unit 4/Lecture 15. Multiple hypothesis testing.md",
+    "Pasted image 20250708154233.png",
+    "Pasted image 20250708154218.png",
     "Good to have.md",
     "Unit 3/Lecture 7. Methods of estimating the MLE.md",
+    "Unit 3/Lecture 8. Examples of Maximum Likelihood Estimators.md",
+    "Unit 4/Lecture 12. The Wald Test and Likelihood Ratio Test.md",
+    "Unit 4/Lecture 11. Introduction to Parametric Hypothesis testing.md",
+    "Unit 3/Lecture 10. Other Methods of estimation.md",
+    "Unit 4",
+    "Unit 3/Lecture 9. Statistical properties of the MLE.md",
     "Unit 3/Lecture 6. Measures of Distance Between Probability Distributions.md",
     "Unit 2/Lecture 5. Confidence Intervals and Delta method.md",
     "Unit 2/Lecture 4. Parametric Estimation and Confidence Intervals.md",
     "Unit 2/Lecture 3. Parametric Statistical Models.md",
     "Unit 1/Lecture 2 Probability Redux.md",
     "Unit 1/Lecture 1 What is statistics.md",
-    "Unit 3/Lecture 10. Other Methods of estimation.md",
     "Unit 3/Recitation. Comparing Estimators.md",
     "Goal of class.md",
     "Images/Pasted image 20250613135531.png",
@@ -190,10 +198,7 @@
     "Images/Pasted image 20250611145132.png",
     "Images/Pasted image 20250611142950.png",
     "Images/Pasted image 20250611143317.png",
-    "Images/Pasted image 20250611141753.png",
-    "Pasted image 20250530155930.png",
     "Unit 3",
-    "Images/Pasted image 20250520131310.png",
     "Unit 2",
     "Images",
     "Unit 1",
